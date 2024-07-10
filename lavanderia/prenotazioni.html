@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserisci Prenotazione e Ritiri</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Inserisci Prenotazione e Ritiri</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registrazione.html">Registrazione</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="prenotazione">
+            <h2>Prenotazione</h2>
+            <form action="prenotazione.php" method="post">
+                <label for="servizio">Servizio:</label><br>
+                <input type="text" id="servizio" name="servizio" required><br><br>
+                <label for="data_prenotazione">Data Prenotazione:</label><br>
+                <input type="date" id="data_prenotazione" name="data_prenotazione" required><br><br>
+                <input type="submit" value="Inserisci Prenotazione">
+            </form>
+        </section>
+        <section id="ritiri">
+            <h2>Ritiri</h2>
+            <form action="inserisci_ritiro.php" method="post">
+                <label for="data_ritiro">Data Ritiro:</label><br>
+                <input type="date" id="data_ritiro" name="data_ritiro" required><br><br>
+                <label for="cliente_id_ritiro">ID Cliente:</label><br>
+                <input type="number" id="cliente_id_ritiro" name="cliente_id_ritiro" required><br><br>
+                <input type="submit" value="Inserisci Ritiro">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lavanderia Online. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
